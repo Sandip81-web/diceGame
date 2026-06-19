@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎲 Dice Clash</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 class="title">🎲 DICE CLASH</h1>
+
+    <div class="game-board">
+      <!-- Player 1 -->
+      <div class="player player--0 activePlayer">
+        <h2>👑 Player 1</h2>
+        <p>Total Score</p>
+        <p class="score score--0">0</p>
+      </div>
+
+      <!-- Center -->
+      <div class="centerArea">
+        <img src="dice-1.png" class="dice" />
+
+        <div class="currentBox">
+          <h3>Current Score</h3>
+          <p class="currentScore">0</p>
+        </div>
+      </div>
+
+      <!-- Player 2 -->
+      <div class="player player--1">
+        <h2>⚡ Player 2</h2>
+        <p>Total Score</p>
+        <p class="score score--1">0</p>
+      </div>
+
+      <!-- Player 3 -->
+      <div class="player player--2">
+        <h2>🔥 Player 3</h2>
+        <p>Total Score</p>
+        <p class="score score--2">0</p>
+      </div>
+
+      <!-- Timer -->
+      <div class="timerBox">
+        <h2>⏳ Timer</h2>
+        <p class="timer">10</p>
+      </div>
+
+      <!-- Player 4 -->
+      <div class="player player--3">
+        <h2>💎 Player 4</h2>
+        <p>Total Score</p>
+        <p class="score score--3">0</p>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="controls">
+      <button class="btn newGame">🔄 New Game</button>
+
+      <button class="btn roll">🎲 Roll</button>
+
+      <button class="btn hold">🤝 Hold</button>
+    </div>
+
+    <!-- Winner Modal -->
+    <div class="winModal hidden">
+      <h1>🏆 Winner!</h1>
+
+      <h2>
+        Player
+        <span class="winPlayer">1</span>
+        Wins!
+      </h2>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
